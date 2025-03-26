@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('assets/fond.avif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h2 {
+    font-family: "anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 550%;
+    text-transform: uppercase;
+    color: white;
+    background-image: url('assets/fond.avif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-clip: text;
+    color: #00000070;
+    letter-spacing: 15px;
+}
+
+.content {
+    background: linear-gradient(#888888, #585858);
+    display: block;
+    height: 225vh;
+    border: 5px solid #585858;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+
+
+#nom {
+    color: white;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: xx-large;
+    line-height: 0.5;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.bloc-gauche {
+    position: relative;
+    background-image: url(assets/fond.avif);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-position: left;
+    background-size: 100%;
+    color: #ffffff;
+    height: 100%;
+    width: 40%;
+    padding-bottom: 5%;
+    border-radius: 5%;
+    border: 2px solid black;
+    margin-top: 15%;
+
+
+}
+
+.bloc-gauche img {
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    width: 50%;
+}
+
+.phone {
+    position: relative;
+    background-image: url(assets/fond.avif);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-position: left;
+    background-size: 100%;
+    color: #ffffff;
+    height: 100%;
+    width: 40%;
+    padding-bottom: 5%;
+    border-radius: 5%;
+    border: 2px solid black;
+    margin-top: 15%;
+}
+
+.phone img {
+    position: absolute;
+    left: -20%;
+    top: 75%;
+    width: 50%;
+}
+
+
+
+
+
+.bloc-droite {
+    position: relative;
+    background-image: url(assets/fond.avif);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-position: left;
+    background-size: 100%;
+    color: #ffffff;
+    height: 100%;
+    width: 40%;
+    padding-bottom: 5%;
+    border-radius: 5%;
+    border: 2px solid black;
+    margin-top: 15%;
+    margin-right: 0;
+    margin-left: auto;
+
+}
+
+.bloc-droite img {
+    position: absolute;
+    right: -25%;
+    bottom: -50%;
+    width: 50%;
+}
+
+
+#centre {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-button {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 5%;
+    text-decoration: none;
+}
+
+.custom-button::before,
+.custom-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button::before {
+    left: 0;
+}
+
+.custom-button::after {
+    right: 0;
+}
+
+.custom-button:hover {
+    color: #18a1d2;
+}
+
+.custom-button:hover::before,
+.custom-button:hover::after {
+    background-color: #18a1d2;
+}
+
+p {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.menuderoulant {
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.sousmenu {
+    display: none;
+    position: absolute;
+    background-color: #00000050;
+    min-width: 160px;
+    border-radius: 5%;
+    list-style-type: none;
+    padding: 0;
+    z-index: 1000;
+    margin-top: 11%;
+}
+
+.sousmenu li {
+    text-align: center;
+}
+
+.sousmenu li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.menuderoulant:hover .sousmenu {
+    display: block;
+}
+
+
+.menuderoulant .custom-button {
+    margin-top: 0;
+}
+
+.textuel {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: large;
+    font-weight: italic;
+    color: white;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
