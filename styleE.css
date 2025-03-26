@@ -1,0 +1,123 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: url('assets/fond.avif') center/cover fixed no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.deroulant {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    background: #888888;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    height: 40px;
+    position: fixed;
+    border-bottom: 4px solid #585858;
+    padding: 10px 10px;
+}
+
+.deroulant li {
+    position: relative;
+}
+
+.deroulant li a {
+    display: block;
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sousmenu {
+    display: none;
+    position: absolute;
+    background: rgba(30, 30, 30, 0.9);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.sousmenu li {
+    width: 100%;
+}
+
+.sousmenu li a {
+    display: block;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+}
+
+.deroulant li:hover .sousmenu {
+    display: block;
+}
+
+.deroulant>li:not(:last-child)::after {
+    content: "";
+    border: 1px solid #c2c2c2;
+    border-width: 15px 1px 0 0;
+    position: absolute;
+    right: -3px;
+    top: 0;
+    height: 50%;
+    top: 10%;
+}
+
+a:hover {
+    color: #18a1d2;
+}
+
+.droite {
+    width: 50%;
+    height: 95vh;
+    background: linear-gradient(135deg, #444, #222);
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-left: 5px solid #18a1d2;
+}
+
+.texte {
+    max-width: 80%;
+}
+
+.texte h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #18a1d2;
+    text-transform: uppercase;
+}
+
+.texte p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}

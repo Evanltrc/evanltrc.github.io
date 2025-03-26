@@ -1,0 +1,168 @@
+#bloc1 {
+    position: relative;
+    font-family: "Playwrite VN", serif;
+    font-style: oblique;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+#bloc1 div {
+    flex: 1 1 0;
+}
+
+#bloc1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#texte {
+    line-height: 128px;
+    text-decoration: underline;
+    object-position: center;
+    font-size: xx-large;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #333;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    width: auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: white;
+    border-bottom: 2px solid gold;
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #575757;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+.deroulant>a::after {
+    content: "\0023F7";
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titre {
+    font-family: "Courier Prime", serif;
+    font-size: 300%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    opacity: 0.9;
+    padding-bottom: 150px;
+}
+
+#about {
+    border: solid black;
+    border-radius: 1px;
+    border-style: double;
+    padding-top: 75px;
+    margin-top: 100px;
+}
+
+#Horraire {
+    text-align: center;
+}
+
+#heure {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: larger;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+body {
+    background-image: url(assets/marbre.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* code couleur menu : #333 sub menu : #575757 */
