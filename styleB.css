@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -37,15 +38,16 @@ h2 {
 }
 
 .content {
-    background: linear-gradient(#888888, #585858);
+    background: linear-gradient(#adadad, #888888);
+    display: block;
     height: 250vh;
     border: 5px solid #585858;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10vh;
     text-align: center;
-    border-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 .grid {
